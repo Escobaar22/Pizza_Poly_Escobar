@@ -3,7 +3,12 @@ public class Main {
         Pizza p1= new Pizza("margarita", "mitjana");
         Pizza p2= new Pizza("funghi", "familiar");
         p2.sirve();
+        Pizza p3 = new Pizza("quatre formatges", "mitjana");
         System.out.println(p1);
-        System.out.println("demanades: ");
+        System.out.println(p2);
+        System.out.println(p3);
+        p2.sirve();
+        System.out.println("demanades: "+Pizza.getTotalDemanades());
+        System.out.println("servides: "+Pizza.getTotalServides());
     }
 }
